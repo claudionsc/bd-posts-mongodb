@@ -3,7 +3,8 @@ import Mongoose from 'mongoose'
 const schema = new Mongoose.Schema({
     title: String,
     content: String,
-    autor: String
+    author: String,
+    date: new Date,
 
 }, {
     publishDate: { createdAt: true, updatedAt: true  },
