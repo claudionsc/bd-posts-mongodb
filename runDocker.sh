@@ -4,8 +4,8 @@
 docker pull mongo
 
 # Remove o container, se existir
-docker stop node-mongoose
-docker container rm node-mongoose
+docker stop node-mongoose2
+docker container rm node-mongoose2
 
 # Gera o container
-docker run --name node-mongoose -p 27017:27017 -d mongo
+docker run --name node-mongoose2 -p 27017:27017 -d mongo

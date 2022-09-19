@@ -1,18 +1,10 @@
 import Mongoose from 'mongoose'
 
-const schema = new Mongoose.schema({
-    title: {
-        type: String,
-        required: [true, 'Adicione um título']
-    },
-    content:{ 
-        type: String,
-        required: [true, 'Adicione o conteúdo']
-    },
-    autor: {
-        type: String,
-        required: [true, 'Adicione o autor']
-    }
+const schema = new Mongoose.Schema({
+    title: String,
+    content: String,
+    autor: String
+
 }, {
     publishDate: { createdAt: true, updatedAt: true  },
     toJSON: {
